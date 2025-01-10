@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.scroll-underline {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 10px; /* Add spacing for the underline */
+  }
+  
+  .scroll-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px; /* Thickness of the underline */
+    background: #1c58b9; /* Color of the underline */
+    animation: scroll-line 4s infinite ease-in-out;
+  
+  }
+  
+  @keyframes scroll-line {
+    0% {
+      width: 0%;
+    }
+    25% {
+      width: 50%; /* Small underline */
+    }
+    50% {
+      width: 100%; /* Full underline */
+    }
+    75% {
+      width: 25%; /* Very small underline */
+    }
+    100% {
+      width: 0%;
+    }
+  }
+
+
+
+
+  .chooseicon{
+    @apply hover:bg-[#1c58b9];
+  }
