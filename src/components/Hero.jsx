@@ -1,5 +1,6 @@
 import 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { NavLink } from 'react-router-dom'
 
 const Hero = () => {
 
@@ -27,7 +28,7 @@ const Hero = () => {
                 <span className='block text-lg'>customers and clients.</span>
             </p>
             <div className='flex justify-center'>
-                <button className="bg-[#1c58b9] hover:bg-[#72da83] text-white hover:text-black text-center font-bold shadow-[5px_5px_0px_0px_rgba(0,0,0)] py-3 px-6 rounded">Get Started Today</button>
+                <button className="bg-[#1c58b9] hover:bg-[#72da83] text-white hover:text-black text-center font-bold shadow-[5px_5px_0px_0px_rgba(0,0,0)] py-3 px-6 rounded"><NavLink to="/pricing">Get Started Today</NavLink></button>
             </div>
 
         </div>

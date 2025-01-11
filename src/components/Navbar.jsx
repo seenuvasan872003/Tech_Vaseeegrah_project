@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import '../App.css';
@@ -28,6 +28,10 @@ export default function Navbar() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [lastScrollY]);
 
+    const handleSignUpClick = () => {
+        window.location.href = 'https://flowcv.me/seenuvasan';
+    };
+
     return (
         <nav className={`bg-[#F5F3EA] shadow-md py-1 fixed w-full z-10 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,12 +54,12 @@ export default function Navbar() {
                         <NavLink to="/contact" className='text-black hover:text-[#1c58b9]'>
                             Contact Us
                         </NavLink>
-                        <button className="bg-[#1c58b9] hover:bg-[#72da83] text-white hover:text-black font-bold shadow-[5px_5px_0px_0px_rgba(0,0,0)] py-3 px-6 rounded">Sign Up</button>
+                        <button onClick={handleSignUpClick} className="bg-[#1c58b9] hover:bg-[#72da83] text-white hover:text-black font-bold shadow-[5px_5px_0px_0px_rgba(0,0,0)] py-3 px-6 rounded">Sign Up</button>
                     </div>
 
                     {/* Mobile menu button */}
                     <div className="md:hidden flex items-center">
-                        <button className="bg-[#1c58b9] hover:bg-[#72da83] text-white hover:text-black font-bold shadow-[5px_5px_0px_0px_rgba(0,0,0)] py-2 px-4 md:py-3 md:px-6 rounded">Sign Up</button>
+                        <button onClick={handleSignUpClick} className="bg-[#1c58b9] hover:bg-[#72da83] text-white hover:text-black font-bold shadow-[5px_5px_0px_0px_rgba(0,0,0)] py-2 px-4 md:py-3 md:px-6 rounded">Sign Up</button>
                         <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 hover:text-blue-600 ml-5">
                             <Menu className="h-6 w-6" />
                         </button>

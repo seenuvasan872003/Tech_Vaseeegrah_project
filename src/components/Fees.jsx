@@ -1,5 +1,6 @@
 import 'react'
 import Manimg from "../assets/Homepage/manimg.png";
+import { NavLink } from 'react-router-dom';
 
 const Fees = () => {
   return (
@@ -11,7 +12,7 @@ const Fees = () => {
                     <span>our fees.</span>  
                 </h1>
                 <p className='mb-9 mx-3 text-left'>We believe in transparency. With Billzy, you’ll always know exactly what you’re paying for, with no hidden costs or surprises. Our straightforward pricing ensures you can manage your finances with confidence and ease.</p>
-                <button className="bg-[#1c58b9] hover:bg-[#72da83] text-white hover:text-black text-center font-bold shadow-[5px_5px_0px_0px_rgba(0,0,0)] py-3 px-6 rounded">View Pricing Schedule</button>
+                <button className="bg-[#1c58b9] hover:bg-[#72da83] text-white hover:text-black text-center font-bold shadow-[5px_5px_0px_0px_rgba(0,0,0)] py-3 px-6 rounded"><NavLink to="/pricing">View Pricing Schedule</NavLink></button>
             </div>
             <div className='relative sm:p-5 md:p-10 lg:p-20 order-1 md:order-2'>
                 <img src={Manimg} alt="demovideo" />

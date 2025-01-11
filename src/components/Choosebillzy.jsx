@@ -25,7 +25,7 @@ return (
                             <li className="text-left mt-2"><HiCheckCircle className='inline' />Plans to suit all sized businesses</li>
                             <li className="text-left mt-2"><HiCheckCircle className='inline' />Save more with more Volume</li>
                         </ul>
-                        <div className='border bottom-1 bg-black text-white hover:text-black hover:bg-[#1c58b9] w-fit px-10 py-5 rounded-lg mt-5'>Learn More</div>
+                        <div className='border bottom-1 bg-black text-white  hover:bg-[#1c58b9] w-fit px-10 py-5 rounded-lg mt-5'>Learn More</div>
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-1/3 p-4">
@@ -40,7 +40,7 @@ return (
                             <li className="text-left mt-2"><HiCheckCircle className='inline' />Protects cardholder information</li>
                             <li className="text-left mt-2"><HiCheckCircle className='inline' />Regular security updates</li>
                         </ul>
-                        <div className='border bottom-1 bg-black text-white hover:text-black hover:bg-[#1c58b9] w-fit px-10 py-5 rounded-lg mt-5'>Learn More</div>
+                        <div className='border bottom-1 bg-black text-white  hover:bg-[#1c58b9] w-fit px-10 py-5 rounded-lg mt-5'>Learn More</div>
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-1/3 p-4">
@@ -55,7 +55,7 @@ return (
                             <li className="text-left mt-2"><HiCheckCircle className='inline' />Dedicated support team.</li>
                             <li className="text-left mt-2"><HiCheckCircle className='inline' />Personalised support experience</li>
                         </ul>
-                        <div className='border bottom-1 bg-black text-white hover:text-black hover:bg-[#1c58b9] w-fit px-10 py-5 rounded-lg mt-5'>Learn More</div>
+                        <div className='border bottom-1 bg-black text-white hover:bg-[#1c58b9] w-fit px-10 py-5 rounded-lg mt-5'>Learn More</div>
                     </div>
                 </div>
             </div>

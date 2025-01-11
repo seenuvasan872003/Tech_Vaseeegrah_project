@@ -16,7 +16,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Solutions</h3>
             <ul className="space-y-2">
               <li>
-                <NavLink to="/" >
+                <NavLink to="/usecase" >
                 Use Cases
                 </NavLink>
               </li>
@@ -31,7 +31,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-xl font-bold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
                 <NavLink to="/" >
@@ -39,7 +39,7 @@ export default function Footer() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about">
+                <NavLink to="/contact">
                 Contact Us
                 </NavLink>
               </li>
