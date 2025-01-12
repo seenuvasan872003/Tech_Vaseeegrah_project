@@ -1,5 +1,6 @@
 import  { useRef } from 'react';
 import videoimg from '../assets/Homepage/video_thumbnail.png';
+import video from '../assets/Homepage/Demovideo.mp4';
 
 const Demovideo = () => {
     const videoRef = useRef(null);
@@ -34,7 +35,7 @@ const Demovideo = () => {
                 </div>
             </div>
             <video ref={videoRef} width="600" controls style={{ display: 'none' }}>
-                <source src="your-video-link.mp4" type="video/mp4" />
+                <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </>
